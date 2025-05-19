@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Доходи</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">
+        <img src="img/logo.png" alt="SpendWise">
+        <span>SpendWise</span>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="income.html">Income</a>
+        <a href="spending.html">Spending</a>
+        <a href="budget.html">Budget</a>
+    </nav>
+</header>
+<main>
+    <h1>Доходи</h1>
+    <form onsubmit="addIncome(event)">
+        <input type="text" id="incomeSource" placeholder="Джерело" required>
+        <input type="number" id="incomeAmount" placeholder="Сума" required>
+        <button type="submit">Додати</button>
+    </form>
+    <ul id="incomeList"></ul>
+</main>
+</body>
+</html>
